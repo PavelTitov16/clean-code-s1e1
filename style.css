@@ -29,7 +29,8 @@
     width: 500px;
     margin: 0 auto 0;
 }
-.todo-app__task-input, .todo-app__task-label {
+.todo-app__task-input, 
+.todo-app__task-label {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -107,7 +108,10 @@ input#new-task {
     justify-content: space-between;
     align-items: center;
 }
-.todo-app__checkbox, .todo-app__task-label, .todo-app__task-input, .todo-app__btn {
+.todo-app__checkbox, 
+.todo-app__task-label, 
+.todo-app__task-input, 
+.todo-app__btn {
     vertical-align: middle;
 }
 
