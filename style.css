@@ -88,7 +88,6 @@
 .todo-app__task-input:focus {
     color: #333;
 }
-
 /* New Task */
 .todo-app__subtitle {
     display: block;
@@ -97,7 +96,6 @@
 input#new-task {
     width: 318px;
 }
-
 /* Task list */
 .todo-app__tasks-list-item {
     overflow: hidden;
@@ -114,7 +112,6 @@ input#new-task {
 .todo-app__btn {
     vertical-align: middle;
 }
-
 .todo-app__checkbox {
     margin: 0 10px;
 }
@@ -135,23 +132,19 @@ input#new-task {
 .todo-app__delete-img:hover {
     transform: rotateZ(0);
 }
-
 /* Completed */
 .todo-app__tasks-done-list .todo-app__task-label {
     text-decoration: line-through;
     color: #888;
 }
-
 /* Edit Task */
 .todo-app__tasks-list .todo-app__tasks-list-item .todo-app__task-input {
     display: none;
 }
-
 ul li.editMode input[type=text] {
     display: inline-block;
     width: 224px;
 }
-
 ul li.editMode label {
     display: none;
 }
