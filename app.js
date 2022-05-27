@@ -15,7 +15,7 @@ const completedTasksHolder = document.querySelector(".todo-app__tasks-done-list"
 
 
 //New task list item
-const createNewTaskElement = function(taskString){
+const createNewTaskElement = function(taskString) {
 
   const listItem = document.createElement("li");
 
@@ -32,7 +32,7 @@ const createNewTaskElement = function(taskString){
   const deleteButton = document.createElement("button");//delete button
   const deleteButtonImg = document.createElement("img");//delete button image
 
-  label.innerText=taskString;
+  label.innerText = taskString;
   label.className = 'todo-app__task-label';
 
   //Each elements, needs appending
@@ -77,7 +77,7 @@ const addTask = function() {
 
 //Edit an existing task.
 
-const editTask=function() {
+const editTask = function() {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
 
@@ -149,7 +149,7 @@ const ajaxRequest = function() {
 
 
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
+addButton.onclick = addTask;
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
 
