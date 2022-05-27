@@ -64,7 +64,7 @@
 }
 /* Heading */
 .todo-app__title,
-.todo-app__subtitle {
+.todo-app__append-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -89,7 +89,7 @@
   color: #333;
 }
 /* New Task */
-.todo-app__subtitle {
+.todo-app__append-label {
   display: block;
   margin: 0 0 20px;
 }
