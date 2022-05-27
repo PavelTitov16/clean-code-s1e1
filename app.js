@@ -18,7 +18,7 @@ const completedTasksHolder = document.querySelector(".todo-app__tasks-done-list"
 const createNewTaskElement = function(taskString) {
 
   const listItem = document.createElement("li");
-
+  listItem.className =  "todo-app__tasks-list-item";
   //input (checkbox)
   const checkBox = document.createElement("input");//checkbx
   //label
@@ -34,7 +34,7 @@ const createNewTaskElement = function(taskString) {
 
   label.innerText = taskString;
   label.className = 'todo-app__task-label';
-
+  label.setAttribute("for", "todo-app__task");
   //Each elements, needs appending
   checkBox.type = "checkbox";
   checkBox.className = "todo-app__checkbox";
@@ -84,10 +84,10 @@ const editTask = function() {
 
   const listItem = this.parentNode;
 
-  const editInput = listItem.querySelector('input[type=text]');
-  const label = listItem.querySelector("label");
-  const editBtn = listItem.querySelector(".edit");
-  const containsClass = listItem.classList.contains("editMode");
+  const editInput = listItem.querySelector('.todo-app__task-input');
+  const label = listItem.querySelector(".todo-app__task-label");
+  const editBtn = listItem.querySelector(".todo-app__edit-btn");
+  const containsClass = listItem.classList.contains("todo-app__tasks-list-item__redactored");
   //If class of the parent is .editmode
   if (containsClass) {
 
@@ -101,7 +101,7 @@ const editTask = function() {
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle("editMode");
+  listItem.classList.toggle("todo-app__tasks-list-item__redactored");
 };
 
 
@@ -157,9 +157,9 @@ addButton.addEventListener("click", ajaxRequest);
 const bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
   console.log("bind list item events");
   //select ListItems children
-  const checkBox = taskListItem.querySelector("todo-app__checkbox");
-  const editButton = taskListItem.querySelector("todo-app__edit-btn");
-  const deleteButton = taskListItem.querySelector("todo-app__delete-btn");
+  const checkBox = taskListItem.querySelector(".todo-app__checkbox");
+  const editButton = taskListItem.querySelector(".todo-app__edit-btn");
+  const deleteButton = taskListItem.querySelector(".todo-app__delete-btn");
 
 
   //Bind editTask to edit button.

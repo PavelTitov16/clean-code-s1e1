@@ -96,7 +96,8 @@ input#new-task {
   width: 318px;
 }
 /* Task list */
-.todo-app__tasks-list-item {
+.todo-app__tasks-list-item,
+.todo-app__tasks-list-item__redactored {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -139,10 +140,11 @@ input#new-task {
 .todo-app__tasks-list .todo-app__tasks-list-item .todo-app__task-input {
   display: none;
 }
-ul li.editMode input[type=text] {
-  display: inline-block;
-  width: 224px;
+.todo-app__tasks-list .todo-app__tasks-list-item__redactored .todo-app__task-input {
+  display:inline-block;
+  width:224px
 }
-ul li.editMode label {
-  display: none;
+
+.todo-app__tasks-list .todo-app__tasks-list-item__redactored .todo-app__task-label {
+  display:none;
 }
