@@ -63,8 +63,7 @@
   color: #3a3a3a;
 }
 /* Heading */
-.todo-app__title,
-.todo-app__append-label {
+.todo-app__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
