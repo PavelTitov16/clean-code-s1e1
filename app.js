@@ -87,7 +87,7 @@ const editTask = function() {
   const editInput = listItem.querySelector('.todo-app__task-input');
   const label = listItem.querySelector('.todo-app__task-label');
   const editBtn = listItem.querySelector('.todo-app__edit-btn');
-  const containsClass = listItem.classList.contains('todo-app__tasks-list-item__redactored');
+  const containsClass = listItem.classList.contains('todo-app__tasks-list-item__edited');
   //If class of the parent is .editmode
   if (containsClass) {
 
@@ -101,7 +101,7 @@ const editTask = function() {
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle('todo-app__tasks-list-item__redactored');
+  listItem.classList.toggle('todo-app__tasks-list-item__edited');
 };
 
 

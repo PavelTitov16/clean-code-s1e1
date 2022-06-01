@@ -140,11 +140,11 @@ input#new-task {
 .todo-app__tasks-list .todo-app__tasks-list-item .todo-app__task-input {
   display: none;
 }
-.todo-app__tasks-list .todo-app__tasks-list-item__redactored .todo-app__task-input {
+.todo-app__tasks-list .todo-app__tasks-list-item__edited .todo-app__task-input {
   display: inline-block;
   width: 224px
 }
 
-.todo-app__tasks-list .todo-app__tasks-list-item__redactored .todo-app__task-label {
+.todo-app__tasks-list .todo-app__tasks-list-item__edited .todo-app__task-label {
   display: none;
 }
